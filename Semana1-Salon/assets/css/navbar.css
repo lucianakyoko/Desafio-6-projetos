@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+
+.nav_logo {
+  font-family: 'Sacramento', cursive;
+  font-size: 4.8rem;
+}
+
+button {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 1.5rem;
+}
+
+.menu .nav_item a{
+  font-size: 1.8rem;
+  padding: 1.5rem;  
+  color: var(--color-gray-darker);
+  display : inline-block;
+  transition: all 1s ease-in;
+}
+
+.menu .nav_item a:hover::after,
+.menu .active a::after {
+  content: '';
+  border-bottom: 2px solid #000;
+  width: 35px;
+  display: block;
+}
