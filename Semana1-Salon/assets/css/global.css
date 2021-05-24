@@ -1,0 +1,25 @@
+:root {
+  --color-black: #060606;
+  --color-gray-darker: #1A1918;
+  --color-gray-light: #464240;
+
+  --color-white-darker: #F7F4F4;
+  --color-white-light: #FEFEFE;
+
+  --color-yellow: #E39821;
+
+  --font-sacramento: 'Sacramento', cursive;
+}
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+
+  background-color: var(--color-white-darker);
+}
+
