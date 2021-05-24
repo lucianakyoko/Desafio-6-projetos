@@ -1,0 +1,112 @@
+.footer {
+  background-color: var(--color-black);
+  padding: 4rem;
+}
+
+.salon_info {
+  background-color: var(--color-black);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.salon_address {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.salon_address img {
+  background-color: var(--color-black);
+  margin-bottom: 2rem;
+}
+.salon_address p{
+  background-color: var(--color-black);
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--color-gray-light);
+}
+
+.salon_oppening_hours {
+  width: 40%;
+  padding: 4rem 0;
+  background-color: var(--color-black);
+}
+.salon_oppening_hours h2 {
+  background-color: var(--color-black);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-white-darker);
+  
+  margin-bottom: 2rem;
+}
+
+.salon_oppening_hours li {
+  background-color: var(--color-black);
+  padding-bottom: 2rem;
+}
+
+.salon_oppening_hours h3 {
+  background-color: var(--color-black);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-white-darker);
+  text-align: center;
+}
+
+.salon_oppening_hours p {
+  background-color: var(--color-black);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--color-white-darker);
+  text-align: center;
+}
+
+
+.salon_oppening_hours a {
+  background-color: var(--color-black);
+  margin: auto;
+  display: block;
+}
+
+.copyrights_info {
+  content: '';
+  border-top: 2px solid var(--color-gray-darker);
+  width: 29rem;
+  display: block;
+  margin-top: 1rem;
+}
+
+.copyrights_info p,
+.copyrights_info span,
+.copyrights_info a {
+  background-color: var(--color-black);
+  color: var(--color-gray-light);
+  font-size: 1.6rem;
+}
+
+.copyrights_info {
+  width: 90%;
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyrights_info p {
+  padding: 1rem;
+}
+
+.logo_footer {
+  font-family: 'Sacramento', cursive;
+}
