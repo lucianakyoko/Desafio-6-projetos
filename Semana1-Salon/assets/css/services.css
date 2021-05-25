@@ -1,0 +1,116 @@
+.container {
+  background-color: var(--color-black);
+  color: var(--color-white-light);
+}
+
+.subtitle {
+  padding-top: 4rem;
+}
+
+.services {
+  width: 85%;
+  margin: 0 auto;
+  color: var(--color-gray-light)
+}
+
+.services_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services_item {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  width: 30rem; height: 30rem;
+  padding:2rem;
+  transition: all 0.5s;
+}
+
+.services_item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: var(--color-white-light);
+  border: 8px solid var(--color-gray-darker);
+}
+
+.service_name {
+  width: 100%;
+  margin-bottom: 2rem;
+
+  color: var(--color-white-darker);
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.12em;
+}
+
+.service_price_list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.service_price_item {
+  width: 100%;
+  font-size: 1.8rem;
+  letter-spacing: 0.12em;
+
+  padding: 1rem; margin: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: -3rem;
+
+  border: 1px solid var(--color-gray-light);
+}
+
+.service_description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.service_corte {
+  background-image: url(../img/services/servico-corte.jpg);
+}
+
+.service_escova {
+  background-image: url(../img/services/servico-escova.jpg);
+}
+
+.service_alisamento {
+  background-image: url(../img/services/servico-alisamento.jpg);
+}
+
+.service_penteado{
+  background-image: url(../img/services/servico-penteado.jpg);
+  
+}
+
+.service_pintura{
+  background-image: url(../img/services/servico-pintura.jpg);
+  
+}
+
+.service_barba{
+  background-image: url(../img/services/servico-barba.jpg);
+  
+}
+
+.service_permanente{
+  background-image: url(../img/services/servico-permanente.jpg);
+  
+}
+
+.service_manicure{
+  background-image: url(../img/services/servico-manicure.jpg);
+
+}
