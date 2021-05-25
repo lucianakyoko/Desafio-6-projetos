@@ -1,147 +1,132 @@
-.hero, 
-.services-center, 
-.professional_profile {
-  width: 75%;
+.hero {
+  max-width: 70%;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.hero_left-textbox {
-  margin-bottom: 4rem;
-}
-
-.hero_left-textbox::before,
-.hero_left-textbox::after {
+.hero_left-textbox::after,
+.hero_left-textbox::before {
   content: '';
-  border-bottom: 2px solid #C4C4C4;
-  width: 29rem;
+  border-bottom: 2px solid var(--color-gray-light);
+  width: 20rem;
   display: block;
+  margin: 1.6rem 0;
 }
 
-.hero_left h1 .regular_text{
+.regular_text {
   font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 2;
-  text-transform: uppercase;
+  color: var(--color-gray-darker);
 }
 
-.hero_left h1 .black_text {
+.black_text {
   font-weight: 900;
   font-size: 3.6rem;
   letter-spacing: 0.43em;
-  text-transform: uppercase;
 }
 
-.hero_left h1 .yellow_text {
+.yellow_text {
   color: rgba(227, 152, 33, 0.48);
-  font-size: 3.6rem;
+  letter-spacing: 0.16em;
+}
+
+.hero_right {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 
-.hero_right img {
-  width: 110%;
-}
-
-
-/* CHAMADA SERVIÇOS: */ 
+/* SECTION: CHAMADA SERVIÇOS*/
 .services_home {
   background-color: var(--color-black);
-  padding: 8rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   position: relative;
   top: -2px;
 }
 
 .services-center {
-  background-color: var(--color-black);
-
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.services_home-left {
-  background-color: var(--color-black);
-  display: inline-block;
-}
 .services_home-left::before {
   content: '';
-  border-top: 2px solid var(--color-gray-darker);
-  width: 29rem;
+  border-bottom: 2px solid var(--color-gray-light);
+  width: 20rem;
   display: block;
-  margin-bottom: 1rem;
+  margin: 1.6rem 0;
 }
 
 .services-btn {
-  background-color: var(--color-black);
-  width: 24rem;
-  display: inline-block;
-  padding: 1rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--color-white-darker);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  border: 4px solid var(--color-white-darker);
-  transition: all .5s ease-in;
+  width: 30rem;
+  color: var(--color-white-light);
+  border: 4px solid var(--color-white-light);
+  text-align: left;
 }
 
 .services-btn:hover {
-  border: 4px solid var(--color-gray-darker);
   color: var(--color-gray-darker);
-}
-
-.services_home-rigth {
-  background-color: var(--color-black);
+  border: 4px solid var(--color-gray-darker);
 }
 
 .services_home-rigth::after {
   content: '';
-  border-top: 2px solid var(--color-gray-darker);
-  width: 29rem;
+  border-bottom: 2px solid var(--color-gray-light);
+  width: 20rem;
   display: block;
-  margin-top: 1rem;
-
+  margin: 1.6rem;
   position: relative;
-  left: 370px;
+  left: 34rem;
 }
-.services_home-rigth p {
-  background-color: var(--color-black);
-  
+
+.services_home-rigth {
   color: var(--color-white-darker);
-  font-size: 3.6rem;
+  font-size: 3rem;
   letter-spacing: 0.21em;
   text-align: right;
+  font-weight: 500;
 }
 
-
-/* CHAMADA PERFIL DA PROFISSIONAL: */
+/* SECTION: PROFESSIONAL PROFILE */
 .professional_profile {
-  margin: 12rem auto;
-
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 8rem 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .professional_profile-img {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.professional_profile-img img {
+  max-width: 60%;
+  margin-bottom: 1.6rem;
+}
+
 .professional_profile-img p {
   font-size: 3.2rem;
   font-weight: 700;
-  margin-top: 2rem;
+  letter-spacing: 0.11em;
 }
 
 .professional_profile-text {
   width: 50%;
 }
 
-.professional_profile-text p{
-  line-height: 3;
+.professional_profile-text p {
   font-size: 1.8rem;
-  font-weight: 400;
+  line-height: 2.6;
+  letter-spacing: 0.12em;
   text-align: right;
 }

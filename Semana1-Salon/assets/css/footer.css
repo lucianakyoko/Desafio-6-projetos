@@ -110,3 +110,8 @@
 .logo_footer {
   font-family: 'Sacramento', cursive;
 }
+
+.copyrights_info .link {
+  font-weight: 500;
+  color: rgba(227, 152, 33, 0.48);
+}
