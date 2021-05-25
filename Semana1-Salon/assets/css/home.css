@@ -6,6 +6,10 @@
   justify-content: space-between;
 }
 
+.hero_left-textbox {
+text-transform: uppercase;
+}
+
 .hero_left-textbox::after,
 .hero_left-textbox::before {
   content: '';
