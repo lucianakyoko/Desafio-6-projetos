@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.subtitle {
+  padding-top: 4rem;
+}
+
 .products_list {
   display: flex;
   align-items: center;

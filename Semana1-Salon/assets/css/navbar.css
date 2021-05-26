@@ -1,5 +1,5 @@
 .header {
-  width: 70%;
+  width: 70%; height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,6 +10,7 @@
 .nav_logo {
   font-family: 'Sacramento', cursive;
   font-size: 4.8rem;
+  text-decoration: none;
 }
 
 button {
@@ -39,3 +40,95 @@ button {
   width: 35px;
   display: block;
 }
+
+/* MEDIA QUERIES: */
+ @media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    background-color: var(--color-black);
+  }
+  .nav_logo {
+    color: var(--color-white-darker);
+    font-size: 4rem;
+    margin-left: 2rem;
+  }
+
+  .nav_logo a:visited {
+    color: inherit;
+  }
+
+  button {
+    display: flex;
+    padding: .5rem 1rem;
+
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+    color: var(--color-white-darker);
+  }
+
+  .burger {
+    width: 20px;
+    border-top: 2px solid;
+    display: block;
+    margin-right: 4rem;
+  }
+
+  .burger::after,
+  .burger::before {
+    content: '';
+    display: block;
+    width: 20px; 
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    position: relative;
+    transition: .3s;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 0; top: 8vh;
+    width: 100%; height: 0;
+    
+    background-color: var(--color-gray-darker);
+    z-index: 100;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: .6s ease-in;
+  }
+  
+  .nav.active .menu {
+    display: block;
+    height: 80vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .nav.active .burger {
+    border-top-color: transparent;
+  }
+  .nav.active .burger::before {
+    transform: rotate(135deg);
+  }
+  .nav.active .burger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .menu .nav_item a{
+    color: var(--color-white-light);
+    width: 85%;
+    margin: 0 0 0 4rem;
+    padding: 3rem 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .menu .nav_item a:hover::after,
+  .menu .active a::after {
+    border-bottom: none;
+  }
+
+ }

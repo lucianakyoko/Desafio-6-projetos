@@ -112,5 +112,69 @@
 
 .service_manicure{
   background-image: url(../img/services/servico-manicure.jpg);
+}
 
+.service_btn {
+  padding-top: 18rem;
+  object-fit: contain;
+}
+
+.service_btn a {
+  width: 90%;
+  margin: auto 0;
+  text-align: center;
+  font-size: 4.2rem;
+  padding: 2rem 1rem;
+}
+
+.services_item.service_btn:hover {
+  border: none;
+  transform: none;
+}
+
+/* MEDIA QUERIES: */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  
+.subtitle_description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  width: 90%;
+  margin: auto auto 4rem auto;
+}
+  
+  .services {
+    width: 100%;
+  }
+    
+  .services_item {   
+    margin-right: 3.5rem;
+    margin-top: .5rem;
+  }
+  
+  .services_item:hover {
+    transform: none;
+  }
+  
+  .service_description {
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+  }
+
+  .services_item.service_btn {
+    padding-top: 8rem;
+    margin-bottom: 0;
+  }
+  
+  .service_btn a {
+    font-size: 3.2rem;
+  }
+  
+  .services_item.service_btn:hover {
+    border: none;
+    transform: none;
+  }
+  
 }

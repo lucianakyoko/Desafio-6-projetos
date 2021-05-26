@@ -1,5 +1,6 @@
 .subtitle {
   margin-bottom: 8rem;
+  padding-top: 4rem;
 }
 
 .about {
@@ -22,4 +23,30 @@
   color: var(--color-gray-darker);
   line-height: 2;
   margin-bottom: 4rem;
+}
+
+/* MEDIA QUERIES: */  
+@media screen and (max-width: 768px) {
+  .about {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .about_left {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .about_left p {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+  
+  .about_left a {
+    margin-bottom: 4rem;
+  }
+
+  .about_right {
+    display: none;
+  }
 }
